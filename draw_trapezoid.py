@@ -1,0 +1,16 @@
+# 마름모꼴 그리기함수
+def draw_trapezoid(turtle, color, x, y, width, height):
+    turtle.penup()
+    turtle.color(color)
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.forward(width)
+    turtle.right(60)
+    turtle.forward(height)
+    turtle.right(120)
+    turtle.forward(width + 30)
+    turtle.right(120)
+    turtle.forward(height)
+    turtle.right(60)
+    turtle.end_fill()

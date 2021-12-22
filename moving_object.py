@@ -1,0 +1,41 @@
+l = 6
+#눈송이
+def moving_object(move):
+    move.pencolor('white')
+    (x0, y0) = move.pos()
+    # draw circle
+    for j in range(6):
+        move.goto(x0, y0)
+        move.pendown()
+        move.forward(2 * l)
+        (x1, y1) = move.pos()
+        move.left(60)
+        move.forward(l)
+        move.penup()
+        move.goto(x1, y1)
+        move.pendown()
+        move.right(120)
+        move.forward(l)
+        move.penup()
+        move.goto(x1, y1)
+        move.pendown()
+        move.left(60)
+        move.forward(l)
+        move.left(60)
+        (x2, y2) = move.pos()
+        move.forward(2 * l)
+        move.penup()
+        move.goto(x2, y2)
+        move.pendown()
+        move.right(120)
+        move.forward(2 * l)
+        move.penup()
+        move.goto(x2, y2)
+        move.pendown()
+        move.left(60)
+        move.forward(2 * l)
+        move.penup()
+        move.pendown()
+        move.left(60)
+
+

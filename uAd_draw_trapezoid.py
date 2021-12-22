@@ -1,0 +1,16 @@
+#뒤집한 마름모
+def uAd_draw_trapezoid(turtle, color, x, y, width, height):
+    turtle.penup()
+    turtle.color(color)
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.forward(width)
+    turtle.right(120)
+    turtle.forward(height)
+    turtle.right(60)
+    turtle.forward(width + 20)
+    turtle.right(60)
+    turtle.forward(height)
+    turtle.right(120)
+    turtle.end_fill()
